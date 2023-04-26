@@ -1,0 +1,161 @@
+/*Importation de la police provenant de Google Font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+/*video de fond*/
+#video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+/*titre*/
+header{
+    color: white;
+    width: 800px; 
+    margin: auto;
+    border-radius: 10px; 
+}
+.titre{
+    border-radius: 15px;
+    padding: 10px; 
+    margin-bottom: 80px; 
+}
+h1, h2 {
+    border-radius: 20px;
+    position: absolute; 
+    padding: 20px 10px 20px 10px;
+}
+h1{
+    background-color: black;
+    margin-left: -30px; 
+}
+h2{    
+    background-color: goldenrod;
+    margin-left: 200px; 
+    margin-top: 0px; 
+
+}
+.contenu-complet {
+    background-color:black;
+    width: 800px;
+    margin: auto;
+    padding: 20px 10px 70px 20px; 
+    border-radius: 10px;
+}
+
+/*couleur des boites*/
+.gauche{
+    width: 40%;
+    float: left;
+}
+
+.dorée{
+    background-color: goldenrod;
+    padding: 15px 15px 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px; 
+}
+.noir{
+    background-color: black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+.blanc{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    position: absolute;
+    padding: 5px;
+}
+.beige{
+    background-color: rgb(253, 219, 156);
+    margin-left: 80px;
+    padding: 5px 5px 8px 5px;
+    border-radius: 15px;
+    text-align: center; 
+}
+#informations{
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+}
+
+/*echeance*/
+.radio{
+    background-color:rgb(253, 219, 156);
+    border-radius: 15px;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+/*case a cocher*/
+.checkbox-container{
+    margin-top: 50px;
+}
+.checkbox{
+    background-color: rgb(253, 219, 156);
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom:10px;
+}
+#dropdown{
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 200px;
+    margin-bottom:2px;
+    margin-top: 2px;
+}
+#délais_de_réponse{
+    font-size: 15px;
+    margin-right: -200px;
+}
+
+/*detaille du projet*/
+.droite{ 
+    width: 60%;
+    float: right; 
+}
+textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    min-height: 300px; 
+    resize: none;
+    border-radius: 3px;
+
+    padding: 0 20px 0 20px;
+}
+.textarea{
+    background-color: rgb(253, 219, 156);
+    padding: 10px 10px 5px 10px;
+    margin-top: 45px;
+    border-radius: 10px;
+}
+
+/* Boutons */
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 430px;
+    margin-bottom: 10px;
+}
+button{
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+#reinitialiser {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}   
+#envoyer{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}

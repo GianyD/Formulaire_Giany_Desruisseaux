@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_F2.css">
+    <title>Formulaire Giany</title>
+</head>
+
+<body>
+    <!--video de fond-->
+    <video autoplay muted loop id="video-background">
+		<source src="C:\Users\Giany\OneDrive\Bureau\TP web\tp formulaire\particules-27669.mp4"type="video/mp4">
+	</video>
+    <!--Titre-->
+    <header>
+        <div class="titre">
+            <h1>Editeur de script</h1>
+        </div>
+        <div class="titre">
+            <h2>Nous soumettre votre projet</h2>
+        </div>
+    </header>
+    <form>
+        <!--couleurs de boites-->
+        <div class="contenu-complet">
+
+            <div class="gauche">
+
+                <div class="dorée">
+
+                    <div class="noir">
+                        <!--coordonnées et delais de réponse demander-->
+                        <label>
+                            <div class="blanc">
+                                Nom
+                            </div>
+                            <div class="beige">
+                                <input type="text" name="nom" placeholder="Entrez votre nom" required
+                                    id="informations">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="noir">
+                        <label>
+                            <div class="blanc">
+                                Prénom
+                            </div>
+                            <div class="beige">
+                                <input type="text" name="prenom" placeholder="Entrez votre prénom" required
+                                    id="informations">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="noir">
+                        <label>
+                            <div class="blanc">
+                                E-mail
+                            </div>
+                            <div class="beige">
+                                <input type="text" name="mail" placeholder="Entrez votre email" required
+                                    id="informations">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="dorée">
+                    <div class="noir">
+                        <label>
+                            <div class="blanc">
+                                Echéance
+                            </div>
+                        </label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="group1" value="Sous 3 mois"> sous 3 mois
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="group1" value="3 à 6 mois"> 3 à 6 mois
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="group1" value="Plus de 6 mois"> plus de 6 mois
+                            </label>
+                        </div>
+                    </div>
+                    <div class="noir">
+                        <label>
+                            <div class="blanc">
+                                Nature de la demande
+                            </div>
+                        </label>
+
+                        <div class="checkbox-container">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checkbox" value="Investissement"/> Investissement
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="checkbox" value="Prestation de conseil" /> Prestation de
+                                conseil
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label id="délais_de_réponse">
+                                Réponse souhaitée sous
+                            </label>
+                            <select name="reponse" id="dropdown">
+                                <dropdown>
+                                    <option value="1 jour">
+                                        1 jour
+                                    </option>
+                                    <option value="2 jours">
+                                        2 jours
+                                    </option>
+                                    <option value="3 jours">
+                                        3 jours
+                                    </option>
+                                    <option value="4 jours">
+                                        4 jours
+                                    </option>
+                                    <option value="5 jours">
+                                        5 jours
+                                    </option>
+                                    <option value="5 jours">
+                                        6 jours
+                                    </option>
+                                    <option value="7jours">
+                                        7 jours
+                                    </option>
+                                    <option value="8 jours">
+                                        8 jours
+                                    </option>
+                                </dropdown>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--nom et informations concernant le projet-->
+            <div class="droite">
+                <div class="dorée">
+                    <div class="noir">
+                        <label>
+                            <div class="blanc">
+                                Intitulé
+                            </div>
+                            <div class="beige">
+                                <input type="text" name="intitule" placeholder="Intitulé du projet" required
+                                    id="informations">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="noir">
+                        <label>
+                            <div class="blanc">
+                                Description du projet
+                            </div>
+                        </label>
+                        <div class="textarea">
+                            <textarea name="description-projet" placeholder="Description du projet"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--boutton-->
+            <footer>
+                <button value="submit" id="envoyer">Envoyer</button>
+                <button value="reset" id="reinitialiser">Réinitialiser</button>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
